@@ -96,6 +96,10 @@ function getClientEnvironment(publicUrl) {
       env[key] = JSON.stringify(raw[key]);
       return env;
     }, {}),
+    __PROFILE__: true,
+    __UMD__: true,
+    __EXPERIMENTAL__: true,
+    __DEV__: true,
   };
 
   return { raw, stringified };
